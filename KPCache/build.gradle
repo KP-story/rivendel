@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'com.kp.core'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.hazelcast:hazelcast-all:3.12.3'
+    compile 'org.apache.ignite:ignite-core:2.6.0'
+    compile project(':common')
+}

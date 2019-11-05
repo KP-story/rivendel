@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'com.kp.core'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':common')
+    compile 'org.cache2k:cache2k-all:1.2.4.Final'
+}
+
